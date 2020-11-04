@@ -38,7 +38,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bootcamp-assessment"
+    }
+  },
+  "defaultProject": "bootcamp-assessment",
+  "cli": {
+    "analytics": false
+  }
 }

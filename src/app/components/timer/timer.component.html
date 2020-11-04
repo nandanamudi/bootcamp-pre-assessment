@@ -1,0 +1,16 @@
+
+<button (click)="addEntry()">Add Timer</button>
+<table>
+    <tbody>
+        <tr *ngFor="let entry of entries">
+            <td>{{entry.id}}</td>
+            <td><span>...</span></td>
+            <td>
+                <span *ngIf="getElapsedTime(entry) as elapsed">
+                    {{elapsed.hours}} h {{elapsed.minutes}} m {{elapsed.seconds}} s
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="clear()">Clear</button>
